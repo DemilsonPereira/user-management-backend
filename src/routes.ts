@@ -6,7 +6,7 @@ import { ListUserIdController } from './controller/ListUserIdController';
 import { UpdateUserController } from './controller/UpdateUserController';
 const router = Router();
 
-router.get('/production', (req, res) => {
+router.get('/test', (req, res) => {
     return res.json({ msg: 'server running, Docker' })
 });
 
