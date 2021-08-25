@@ -12,7 +12,7 @@
 
 - **[Typescript](https://www.typescriptlang.org/)**
 - **[NodeJS](https://nodejs.org/en/)**
-- **[Expess](https://expressjs.com/pt-br/)**
+- **[Express](https://expressjs.com/pt-br/)**
 - **[Docker](https://docs.docker.com/)**
 - **[Docker-compose](https://docs.docker.com/compose/)**
 - **[Postgres](https://www.postgresql.org/)**
