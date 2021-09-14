@@ -2,6 +2,8 @@ require('dotenv').config();
 import express, { Request, Response, NextFunction } from 'express';
 import 'reflect-metadata';
 import "express-async-errors";
+import cors from 'cors';
+
 import './database';
 import { router } from './routes';
 
@@ -11,13 +13,14 @@ class Server {
 
     constructor() {
         this.app = express();
+        this.app.use(cors());
         this.configuration();
         this.middlewares();
         this.routes();
     }
 
     public configuration() {
-        this.app.set('port', process.env.PORT || 3333);
+        this.app.set('port', process.env.PORT || 3000);
     }
 
     middlewares() {
